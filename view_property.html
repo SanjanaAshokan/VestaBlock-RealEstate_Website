@@ -12,7 +12,10 @@
     <header class="header">
         <nav class="navbar nav-1">
             <section class="flex">
-                <a href="#" class="logo"><i class="fas fa-home"></i>Website name</a>
+                <div class="logo">
+                    <img src="images/logo.png" alt=""><a href="#">VESTABLOCK</a>
+                </div>
+                
                     <ul>
                         <li><a href="#">post property<i class="fas fa-paper-plane"></i></a></li>
                     </ul>
@@ -61,7 +64,51 @@
         </nav>
 
     </header>
-    
+
+<div class="home">
+    <section class="center">
+        <form action="search.html"  method="'post">
+            <h3>find your perfect plot</h3>
+            <div class="box">
+                <p>Enter Location <span>*</span></p>
+                <input type="text" name="location" required maxlengths="50" place holder="enter City name" class="input">
+            </div>
+            <div class="flex">
+                <div class="box">
+                   <p>service required <span>*</span></p>
+                   <select name="type" class="input" required>
+                      <option value="buy">buy</option>
+                      <option value="sell">sell</option>
+                      <option value="shop">shop</option>
+                   </select>
+                </div>
+            <div class="box">
+                <p>Minimum budget <span>*</span></p>
+                <select name="Minimum" class="input" required>
+                    <option value="500000">5 lac</option>  
+                    <option value="1000000">10 lac</option>  
+                    <option value="2000000">20 lac</option>  
+                    <option value="3000000">30 lac</option>  
+                    <option value="4000000">40 lac</option>  
+                    <option value="5000000">50 lac</option>  
+                </select>
+            </div>
+            <div class="box">
+                <p>Maximum budget <span>*</span></p>
+                <select name="Maximum" class="input" required>
+                    <option value="500000">5 lac</option>  
+                    <option value="1000000">10 lac</option>  
+                    <option value="2000000">20 lac</option>  
+                    <option value="3000000">30 lac</option>  
+                    <option value="4000000">40 lac</option>  
+                    <option value="5000000">50 lac</option>  
+                </select>
+            </div>
+            <input type="submit" values="search property" name="search" class=btn>
+        </form>
+
+    </section>
+</div>
 <!-- view property section starts  -->
 
 <section class="view-property">
